@@ -1,20 +1,32 @@
 "use strick";
 
 // Promise----------------------------/
-let promise = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("done"), 5000);
-  setTimeout(() => reject(new Error("Found a bug")), 5000);
-});
 
-// then.catch.------------------------/
+// let promise = new Promise((resolve, reject) => {
+//   setTimeout(() => resolve("done"), 5000);
+//   setTimeout(() => reject(new Error("Find a bag")), 5000);
+// });
 
-console.log(promise);
+// // then.catch.------------------------/
+// console.log(promise);
+// promise
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   })
+//   .finally(() => console.log("Promise was finished!"));
 
-promise
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.error(error);
-  })
-  .finally(() => console.log("Promise was finished!"));
+// // async.await.---------------------/
+// const getResultPromise = async () => {
+//   try {
+//     const result = await promise;
+//     console.log(result);
+//   } catch (error) {
+//     console.error(error);
+//   } finally {
+//     console.log("Promise was finished!");
+//   }
+// };
+// getResultPromise();
